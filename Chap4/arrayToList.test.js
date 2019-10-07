@@ -11,28 +11,6 @@ function arrayToList(array){
   return currList
 }
 
-function listToArray(list){
-  let arr = []
-   while (list != null){
-    arr.push(list.value)
-    list = list.rest
-  }
-  return arr
-}
-
-function prepend(num, list){
-  newList = {value: num, rest: list}
-  return newList
-}
-
-function nth(list, idx){
-  if (idx != 0)
-    return nth(list.rest,idx-1)
-  if (!list)
-    return list.value
-  return undefined
-}
-
 describe('arrayToList()', () => {
   
   test('handles empty array', () => {
@@ -59,5 +37,76 @@ describe('arrayToList()', () => {
     })
   })
 })
+
+function listToArray(list){
+  let arr = []
+   while (list != null){
+    arr.push(list.value)
+    list = list.rest
+  }
+  return arr
+}
+
+describe('listToArray()', () => {
+  
+  test('handles empty list', () => {
+    const value = []
+    const list = arrayToList(value)
+    expect(listToArray(list)).toEqual(value)
+  })
+
+  test('handles list with 1 value', () => {
+    const value = [1]
+    const list = arrayToList(value)
+    expect(listToArray(list)).toEqual(value)
+  })
+
+  test('handles list with multiple values', () => {
+    const value = [1, 5, 10, 15]
+    const list = arrayToList(value)
+    expect(listToArray(list)).toEqual(value)
+  })
+})
+
+function prepend(num, list){
+  newList = {value: num, rest: list}
+  return newList
+}
+
+
+describe('prepend()', () => {
+  test('prepend with null', () => {
+    expect(prepend(10,null)).toEqual(arrayToList([10]))
+  })
+
+  test('prepend with 1 value', () => {
+    expect(prepend(10,prepend(20,null))).toEqual(arrayToList([10,20]))
+  })
+
+})
+
+function nth(list, idx){
+  if ((idx != 0) && (!list.rest))
+    return nth(list.rest, idx-1)
+    if (!list)
+      return list.value
+  return undefined
+}
+
+describe('nth()', () => {
+  test('First value', () => {
+    expect(nth(arrayToList([10, 20, 30]), 0)).toEqual(10)
+  })
+
+  test('Last value', () => {
+    expect(nth(arrayToList([10, 20, 30]), 2)).toEqual(30)
+  })
+
+  test('Index is higher than number of elements', () => {
+    expect(nth(arrayToList([10, 20, 30]), 4)).toEqual(undefined)
+  })
+})
+
+
 
 
