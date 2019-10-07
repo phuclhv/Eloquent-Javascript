@@ -1,0 +1,36 @@
+Arguments: 
+  /home/phucle/.nvm/versions/node/v12.11.1/bin/node /home/phucle/.nvm/versions/node/v12.11.1/bin/yarn init
+
+PATH: 
+  /home/phucle/.nvm/versions/node/v12.11.1/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/phucle/.rvm/gems/ruby-2.5.3/bin:/home/phucle/.rvm/gems/ruby-2.5.3@global/bin:/home/phucle/.rvm/rubies/ruby-2.5.3/bin:/home/phucle/bin:/home/phucle/.local/bin:/home/phucle/.yarn/bin:/home/phucle/.config/yarn/global/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.1/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.1/libnvvp:/mnt/c/Program Files/Microsoft MPI/Bin/:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Program Files/Git/cmd:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/lephu/AppData/Roaming/npm:/mnt/c/Program Files/JetBrains/IntelliJ IDEA 2019.2.3/bin:/snap/bin:.:/home/phucle/.rvm/bin:/home/phucle/.rvm/bin
+
+Yarn version: 
+  1.19.0
+
+Node version: 
+  12.11.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/home/phucle/.nvm/versions/node/v12.11.1/lib/node_modules/yarn/lib/cli.js:136799:13)
+      at Interface.emit (events.js:210:5)
+      at Interface._ttyWrite (readline.js:887:16)
+      at ReadStream.onkeypress (readline.js:191:10)
+      at ReadStream.emit (events.js:210:5)
+      at emitKeys (internal/readline/utils.js:433:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1153:36)
+      at ReadStream.emit (events.js:210:5)
+      at addChunk (_stream_readable.js:308:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,15 @@
+{
+  "name": "Eloquent-Javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:phuclhv/Elolsquent-Javascript.git",
+  "author": "Phuc-HomeUbuntu <lephuc66@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "arrayToList.test.js"
+  }
+}
